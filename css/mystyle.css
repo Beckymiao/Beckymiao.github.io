@@ -1,11 +1,11 @@
-/* mystyle.css - 最終女性化優雅風格版 */
+/* mystyle.css - 單寧藍主色 + 柔和對比版 (最終修正) */
 
-/* --- 1. 修正全域變數設定 --- */
+/* --- 1. 全域變數設定 (使用柔和玫瑰金) --- */
 :root {
-  /* 新的主題色 (玫瑰金/淡粉) */
-  --bs-primary-rgb: 230, 126, 126; /* 玫瑰金的 RGB 值 */
-  --bs-link-color: #E67E7E; /* 玫瑰金/淡粉色 */
-  --bs-body-bg: #FDF2E9; /* 網站背景色：奶油白/淺米色 */
+  /* 新的主題色 (淡玫瑰金/粉色) */
+  --bs-primary-rgb: 230, 126, 126; 
+  --bs-link-color: #E67E7E; /* 連結使用淡玫瑰金 */
+  --bs-body-bg: #FDF2E9; /* 網站背景色：奶油白 */
 }
 
 /* 確保所有標題字體使用中文字體 */
@@ -15,58 +15,70 @@ h1, h2 {
   font-style: normal;
 }
 
-/* --- 2. 網站內容樣式 (淺色背景，深色文字) --- */
+/* --- 2. 網站內容樣式 (奶油白背景，深色文字) --- */
 body {
-    color: #495057; /* 內文文字使用專業深灰色 (高可讀性) */
-    background-image: none !important; /* 確保沒有任何背景圖片遺留 */
+    color: #495057; /* 內文文字使用專業深灰色 */
 }
 
-/* 確保所有標題使用深色 */
+/* 確保所有標題使用深炭灰色 */
 h1, h2, h3, h4, h5, h6 {
-    color: #212529; /* 標題文字改為深炭灰色 */
+    color: #212529; 
 }
 
-/* --- 3. 側邊導航欄背景與文字顏色設定 (柔和風) --- */
+/* --- 3. 側邊導航欄背景與文字顏色設定 (深單寧藍) --- */
 #sideNav {
-    /* 背景改為單一柔和的玫瑰金色 */
-    background-image: url('../assets/img/blue.jpeg') !important;
-    background-repeat: repeat !important;
-    background-size: auto !important;
-    background-color: transparent !important;
+    /* 設置為單一深單寧藍，維持主題，並移除所有圖片背景樣式 */
+    background-color: #2C578A !important; 
+    background-image: none !important; 
+    background-repeat: no-repeat !important;
 }
 
-/* 更改側邊導航列的連結文字顏色為深色或白色 (在淺玫瑰金背景上，深色較合適) */
+/* 更改側邊導航列的連結文字顏色為白色 (深藍背景上必須是白色) */
 #sideNav .navbar-nav .nav-item .nav-link {
-    color: #212529 !important; /* 深色文字，增加對比度 */
+    color: #ffffff !important; 
     font-weight: 600 !important;
 }
 
-/* 側邊欄連結的 Hover/Active 顏色使用深一階的玫瑰金 */
+/* 側邊欄連結的 Hover/Active 顏色使用淡玫瑰金/粉色 */
 #sideNav .navbar-nav .nav-item .nav-link:hover,
 #sideNav .navbar-nav .nav-item .nav-link:focus,
 #sideNav .navbar-nav .nav-item .nav-link.active {
-    color: #BD5D5D !important; /* 深一階玫瑰金 */
+    color: #E67E7E !important; /* 突顯色 */
 }
 
-/* 確保頭像下方的名字/標語在側邊欄上也是深色 */
+/* 確保頭像下方的名字/標語在側邊欄上是白色 */
 #sideNav .navbar-brand .d-block {
-    color: #212529 !important;
+    color: #ffffff !important;
 }
 
-/* --- 4. 日期、圖標與連結的主題色突顯設定 (使用玫瑰金) --- */
+/* --- 4. 日期、圖標與連結的主題色突顯設定 (使用淡玫瑰金/粉色) --- */
 .expedu_icon,
 .list-inline-item,
-/* 網站所有連結使用主題色 */
-a,
-/* 突顯的日期 */
+a {
+    color: #E67E7E !important; 
+}
+
+/* 確保所有日期文字顏色顯示為您的主題色 (淡玫瑰金/粉色) */
+#experience .flex-shrink-0 .text-primary,
+#education .flex-shrink-0 .text-primary,
 .time-color {
-    color: #E67E7E !important; /* 玫瑰金/淡粉色主題色 */
+    color: #E67E7E !important;
     font-weight: 700 !important;
 }
 
-/* 覆蓋 Bootstrap 的 text-primary 類別對日期的影響，統一使用玫瑰金 */
-#experience .flex-shrink-0 .text-primary,
-#education .flex-shrink-0 .text-primary {
-    color: #E67E7E !important;
-    font-weight: 700 !important;
+/* --- 5. 影片響應式修正 (為您的 MP4 影片服務) --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 比例 (9 / 16 * 100%) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
