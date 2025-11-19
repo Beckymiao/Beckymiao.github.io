@@ -1,8 +1,7 @@
-/* mystyle.css - 單寧藍主色 + 柔和對比版 (最終修正) */
+/* mystyle.css - 丹寧布圖片側邊欄 + 柔和對比版 (最終修正) */
 
 /* --- 1. 全域變數設定 (使用柔和玫瑰金) --- */
 :root {
-  /* 新的主題色 (淡玫瑰金/粉色) */
   --bs-primary-rgb: 230, 126, 126; 
   --bs-link-color: #E67E7E; /* 連結使用淡玫瑰金 */
   --bs-body-bg: #FDF2E9; /* 網站背景色：奶油白 */
@@ -25,16 +24,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #212529; 
 }
 
-/* --- 3. 側邊導航欄背景與文字顏色設定 (深單寧藍) --- */
+/* --- 3. 側邊導航欄背景與文字顏色設定 (丹寧布圖片) --- */
 #sideNav {
-    /* 設置為單一深單寧藍，維持主題，並移除所有圖片背景樣式 */
-    background-image: url('../assets/img/blue.jpeg') !important;
-    background-repeat: repeat !important;
-    background-size: auto !important;
-    background-color: transparent !important;
+    /* 設置背景圖片 - 【重要】請確認您的圖片路徑：url('../assets/img/blue.jpeg') */
+    background-image: url('../assets/img/blue.jpeg') !important; 
+    background-repeat: repeat !important; 
+    background-size: auto !important; 
+    background-color: transparent !important; /* 確保沒有純色覆蓋圖片 */
 }
 
-/* 更改側邊導航列的連結文字顏色為白色 (深藍背景上必須是白色) */
+/* 更改側邊導航列的連結文字顏色為白色 (深色圖片背景上必須是白色) */
 #sideNav .navbar-nav .nav-item .nav-link {
     color: #ffffff !important; 
     font-weight: 600 !important;
