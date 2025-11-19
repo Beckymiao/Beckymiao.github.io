@@ -55,3 +55,39 @@ h2{
     color: #fb7601 !important; /* 您的橙色 */
     font-weight: 700 !important;
 }
+/* --- 側邊導航欄背景與文字顏色設定 --- */
+
+#sideNav {
+  /* 設置背景圖片 */
+  background-image: url('assets/img//blue.jpeg') !important; /* 【重要】請確認您的圖片路徑正確 */
+  background-repeat: repeat !important; /* 確保紋理重複填滿整個側邊欄 */
+  background-size: auto !important; 
+  background-color: transparent !important; /* 確保沒有純色覆蓋圖片 */
+}
+
+/* 更改側邊導航列的連結文字顏色為白色，以確保可讀性 */
+#sideNav .navbar-nav .nav-item .nav-link {
+  color: #ffffff !important; 
+}
+
+/* 保持連結的 Hover/Active 顏色為您設定的橙色 */
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link:focus,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #fb7601 !important; 
+}
+
+
+/* --- 日期顏色修正 (高優先級) --- */
+
+/* 確保所有日期文字顏色顯示為您的橙色 #fb7601 */
+#experience .flex-shrink-0 .text-primary,
+#education .flex-shrink-0 .text-primary {
+  color: #fb7601 !important;
+  font-weight: 700 !important;
+}
+
+.time-color {
+  color: #fb7601 !important;
+  font-weight: 700 !important;
+}
