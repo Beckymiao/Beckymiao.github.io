@@ -1,13 +1,42 @@
-/* 使用極高的優先級選擇器來覆蓋 Bootstrap 的 text-primary 類別 */
+/* mystyle.css - 修正版 */
 
-/* 針對工作經驗 (#experience) 區塊內的日期 */
-#experience .flex-shrink-0 .text-primary {
-  color: #212529 !important; /* 深黑色/深灰色，高對比度 */
-  font-weight: 600 !important;
+/* --- 1. 修正全域變數設定 --- */
+:root{
+  --bs-primary-rgb: 245, 203, 167;
+  --bs-link-color:#fb7601;
+  --bs-body-bg:#FDF2E9
 }
 
-/* 針對學歷 (#education) 區塊內的日期 */
+h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h2{
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.expedu_icon{
+  color:#fb7601;
+}
+.list-inline-item{
+  color:#fb7601;
+}
+
+/* --- 2. 解決日期顏色問題 (高優先級) --- */
+
+/* 確保您自行新增的 time-color 有樣式 */
+.time-color {
+    color: #fb7601 !important;
+    font-weight: 600 !important;
+}
+
+/* 覆蓋 Bootstrap 的 text-primary 類別 (針對 HTML 中還沒改的日期) */
+#experience .flex-shrink-0 .text-primary,
 #education .flex-shrink-0 .text-primary {
-  color: #212529 !important;
-  font-weight: 600 !important;
+    color: #fb7601 !important; 
+    font-weight: 600 !important; 
 }
