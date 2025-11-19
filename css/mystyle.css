@@ -28,9 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 /* --- 3. 側邊導航欄背景與文字顏色設定 (深單寧藍) --- */
 #sideNav {
     /* 設置為單一深單寧藍，維持主題，並移除所有圖片背景樣式 */
-    background-color: #2C578A !important; 
-    background-image: none !important; 
-    background-repeat: no-repeat !important;
+    background-image: url('../assets/img/blue.jpeg') !important;
+    background-repeat: repeat !important;
+    background-size: auto !important;
+    background-color: transparent !important;
 }
 
 /* 更改側邊導航列的連結文字顏色為白色 (深藍背景上必須是白色) */
