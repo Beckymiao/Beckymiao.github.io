@@ -40,3 +40,18 @@ h2{
     color: #fb7601 !important; 
     font-weight: 600 !important; 
 }
+/* -- 最高優先級樣式：確保日期顏色不會被覆蓋 -- */
+
+/* 1. 針對 HTML 中使用 class="text-primary" 的日期 */
+/* 結合了區塊 ID (#experience, #education) 和類別，確保優先級最高 */
+#experience .flex-shrink-0 .text-primary,
+#education .flex-shrink-0 .text-primary {
+    color: #fb7601 !important; /* 您的橙色 */
+    font-weight: 700 !important; /* 確保字體夠粗 */
+}
+
+/* 2. 針對您自定義的 class="time-color" 的日期 */
+.time-color {
+    color: #fb7601 !important; /* 您的橙色 */
+    font-weight: 700 !important;
+}
