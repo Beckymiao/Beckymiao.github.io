@@ -1,32 +1,13 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
+/* 使用極高的優先級選擇器來覆蓋 Bootstrap 的 text-primary 類別 */
 
-h1 {
-  font-family: "Noto Sans TC", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h2{
-  font-family: "Noto Sans TC", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+/* 針對工作經驗 (#experience) 區塊內的日期 */
+#experience .flex-shrink-0 .text-primary {
+  color: #212529 !important; /* 深黑色/深灰色，高對比度 */
+  font-weight: 600 !important;
 }
 
-:root{
-  --bs-primary-rgb: 245, 203, 167;
-  --bs-link-color:#fb7601;
-  --bs-body-bg:#FDF2E9
-}
-.expedu_icon{
-  color:#fb7601;
-}
-.list-inline-item{
-  color:#fb7601;
-}
-/* 覆蓋 Bootstrap text-primary 在日期區塊的設定 */
-.flex-shrink-0 .text-primary {
-  color: #fb7601 !important; /* 將顏色改為深灰色 */
-  /* 或者您想換成的顏色，例如：#0d6efd (藍色) */
-  font-weight: 600 !important; /* 同時加粗，讓日期更顯眼 */
+/* 針對學歷 (#education) 區塊內的日期 */
+#education .flex-shrink-0 .text-primary {
+  color: #212529 !important;
+  font-weight: 600 !important;
 }
