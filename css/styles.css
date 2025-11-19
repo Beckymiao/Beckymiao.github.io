@@ -10970,8 +10970,9 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-/* 將日期文字顏色設定為網站的主色 (Primary Color: #bd5d38) */
-.resume-date {
-  color: var(--bs-primary) !important; 
-  font-weight: 700; /* 加粗，讓時間線更明顯 */
+/* 使用自定義的 .time-color 類別來設定顏色 */
+.time-color {
+  color: #495057 !important; /* 深灰色，高對比度，專業且易讀 */
+  /* 或者您想要的任何顏色，例如紅色 #dc3545 */
+  font-weight: 600; 
 }
