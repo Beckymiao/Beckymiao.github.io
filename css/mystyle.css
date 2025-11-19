@@ -24,3 +24,9 @@ h2{
 .list-inline-item{
   color:#fb7601;
 }
+/* 覆蓋 Bootstrap text-primary 在日期區塊的設定 */
+.flex-shrink-0 .text-primary {
+  color: #495057 !important; /* 將顏色改為深灰色 */
+  /* 或者您想換成的顏色，例如：#0d6efd (藍色) */
+  font-weight: 600 !important; /* 同時加粗，讓日期更顯眼 */
+}
