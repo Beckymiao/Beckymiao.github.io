@@ -40,3 +40,30 @@ h2{
     color: #fb7601 !important; 
     font-weight: 600 !important; 
 }
+/* 設定網站的整體背景圖片 */
+body {
+  background-image: url('assets/img/blue.jpeg'); /* 請替換為您圖片的正確路徑 */
+  background-repeat: repeat; /* 圖片重複以覆蓋整個背景 */
+  background-size: auto;     /* 保持圖片原始大小，或 'cover' 來覆蓋整個區域 */
+  background-attachment: fixed; /* 背景圖片在滾動時保持固定 */
+}
+
+/* 為了提高內容的可讀性，可能需要調整側邊導航和主要內容區塊的背景 */
+/* 假設側邊導航是 #sideNav，主要內容是 #content 或 .container-fluid */
+#sideNav, .container-fluid {
+  background-color: rgba(255, 255, 255, 0.9); /* 給內容區塊一個半透明的白色背景 */
+  /* 或者一個純白色背景，讓內容清晰可見 */
+  /* background-color: white; */
+  padding: 20px; /* 增加一些內邊距 */
+  border-radius: 8px; /* 增加圓角效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影，讓內容區塊浮現 */
+}
+
+/* 如果您的主要內容區塊是 <section> 標籤，可能需要這樣設定 */
+section.resume-section {
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+  padding: 3rem; /* 確保內容有足夠空間 */
+  margin-bottom: 2rem; /* 區塊之間有間距 */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
