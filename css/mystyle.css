@@ -1,8 +1,8 @@
-/* mystyle.css - 丹寧布圖片側邊欄 + 柔和對比版 (最終修正) */
+/* mystyle.css - 最終版本：單寧布圖片 + 柔和玫瑰金突顯 */
 
-/* --- 1. 全域變數設定 (使用柔和玫瑰金) --- */
+/* --- 1. 全域變數設定 --- */
 :root {
-  --bs-primary-rgb: 230, 126, 126; 
+  --bs-primary-rgb: 230, 126, 126; /* 玫瑰金的 RGB */
   --bs-link-color: #E67E7E; /* 連結使用淡玫瑰金 */
   --bs-body-bg: #FDF2E9; /* 網站背景色：奶油白 */
 }
@@ -14,7 +14,7 @@ h1, h2 {
   font-style: normal;
 }
 
-/* --- 2. 網站內容樣式 (奶油白背景，深色文字) --- */
+/* --- 2. 網站內容樣式 (深色文字，淺色背景) --- */
 body {
     color: #495057; /* 內文文字使用專業深灰色 */
 }
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- 3. 側邊導航欄背景與文字顏色設定 (丹寧布圖片) --- */
 #sideNav {
-    /* 設置背景圖片 - 【重要】請確認您的圖片路徑：url('../assets/img/blue.jpeg') */
+    /* 設置背景圖片 - 請確認您的圖片路徑：url('../assets/img/blue.jpeg') */
     background-image: url('../assets/img/blue.jpeg') !important; 
     background-repeat: repeat !important; 
     background-size: auto !important; 
@@ -66,10 +66,10 @@ a {
     font-weight: 700 !important;
 }
 
-/* --- 5. 影片響應式修正 (為您的 MP4 影片服務) --- */
+/* --- 5. 影片響應式修正 --- */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 比例 (9 / 16 * 100%) */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     max-width: 100%;
