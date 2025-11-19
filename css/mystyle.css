@@ -15,12 +15,12 @@ h2{
 
 :root{
   --bs-primary-rgb: 245, 203, 167;
-  --bs-link-color:#F0B27A;
+  --bs-link-color:#fb7601;
   --bs-body-bg:#FDF2E9
 }
 .expedu_icon{
-  color:#F0B27A;
+  color:#fb7601;
 }
 .list-inline-item{
-  color:#F0B27A;
+  color:#fb7601;
 }
